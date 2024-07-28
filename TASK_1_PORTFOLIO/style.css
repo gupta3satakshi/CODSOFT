@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(26, 85, 85);
+    
     color: #ededed;
 }
 
@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: yellowgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,11 +42,14 @@ body {
 
 .navbar a:hover,
 .navbar a.active{
-    color: rgb(52, 204, 204);
+    color: rgb(26, 85, 85);
 }
 
 .About{
     height: 100vh;
+    background: url('img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; 
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -58,13 +61,13 @@ body {
 }
 
 .About-content h1{
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .About-content p{
-    font-size: 16px;
+    font-size: 17px;
     margin: 20px 0 40px;
 }
 
@@ -121,12 +124,129 @@ body {
 
 
 
+.container {
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 40px;
+}
 
 
+#skills {
+	background: rgb(38, 172, 172);
+	padding: 140px;
+}
 
+#skills h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
 
+#skills p {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
 
+.skills-list {
+    font-size: 25px;
+    width: 100%;
+    
 
+}
+
+#project {
+	background: rgb(28, 105, 105);
+	padding: 140px;
+}
+
+#project h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.mycontainer {
+    display: flex;
+  }
+  .mycontainer > div {
+    width:33%;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mycontainer > div a {
+    text-decoration: none;
+    color: rgb(26, 85, 85);
+  }
+
+  .mycontainer > div a:hover{
+    color:rgb(50, 125, 155);
+  }
+
+#contact {
+	background: rgb(26, 85, 85);
+	padding: 120px;
+}
+
+#contact h2 {
+	font-size: 36px;
+    
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#contact p{
+    font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.contact-sci{
+    
+    bottom: 100px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(52, 204, 204);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(52, 204, 204);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact-sci a :hover{
+    color: rgb(26, 85, 85);
+}
+
+.contact-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(52, 204, 204);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact-sci a:hover::before{
+    width: 100%;
+
+}
 
 
 
